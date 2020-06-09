@@ -3,14 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
+    <script src='js/index.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='index.css'/>
+    <!-- <script src='js/demo.js'></script> -->
   </head>
   <body>
     <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
+    <div id='create-monster'>
+      <form id='monster-form'>
+        <div class="form-group col-md-4">
+          <label>Name</label>
+          <input type="text" class="form-control" id="monster-name">
+        </div>
+        <div class="form-group col-md-4">
+          <label>Description</label>
+          <textarea type="text" class="form-control" id="monster-description"></textarea>
+        </div>
+        <div class="form-group col-md-4">
+          <label >Age</label>
+          <input type="number" class="form-control" id="monster-age">
+        </div>
+        <div class="form-group col-md-4">
+          <button type="submit" id="submit" class="btn btn-primary col-mb-2">Submit</button>
+        </div>
+      </form>
+     
+    </div>
+    <button class="btn btn-primary" id="back"><=</button>
+    <button class="btn btn-primary" id="forward">=></button>
     <div id='monster-container'></div>
-    <button id="back"><=</button>
-    <button id="forward">=></button>
   </body>
 </html>
